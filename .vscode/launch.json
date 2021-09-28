@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug net_conf_flattener",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=net_conf_flattener",
+                    "--package=net_conf_flattener"
+                ],
+                "filter": {
+                    "name": "net_conf_flattener",
+                    "kind": "bin"
+                }
+            },
+            "args": [""],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug net_conf_flattener koza elmo",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=net_conf_flattener",
+                    "--package=net_conf_flattener"
+                ],
+                "filter": {
+                    "name": "net_conf_flattener",
+                    "kind": "bin"
+                }
+            },
+            "args": ["koza"],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'hello_cargo'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=net_conf_flattener",
+                    "--package=net_conf_flattener"
+                ],
+                "filter": {
+                    "name": "net_conf_flattener",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
